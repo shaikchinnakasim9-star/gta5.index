@@ -1,0 +1,19 @@
+{
+  "name": "crimson-harbor",
+  "version": "1.0.0",
+  "description": "Crimson Harbor — an original open-world 3D action-adventure game. Pure Three.js, zero build step, zero npm dependencies.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js --verbose",
+    "test": "node --test tests/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  }
+}

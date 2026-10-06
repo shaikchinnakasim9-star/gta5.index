@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crimson Harbor</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <main id="game-shell">
+    <canvas id="game-canvas" aria-label="Crimson Harbor game world"></canvas>
+    <section class="hud hud-top" aria-label="Game status">
+      <div class="brand-mark"><span class="brand-dot"></span><span>CRIMSON HARBOR</span></div>
+      <div class="status-readout"><span id="clock">09:30</span><span class="status-divider"></span><span id="weather">CLEAR SKIES</span></div>
+    </section>
+    <section class="hud hud-bottom">
+      <div class="mission-panel">
+        <p class="eyebrow">CURRENT OBJECTIVE</p>
+        <h1>Find the waterfront lookout</h1>
+        <p class="mission-copy">The city is waking up. Take the high road and get eyes on the harbor.</p>
+      </div>
+      <div class="controls-panel">
+        <div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>Move</span></div>
+        <div><kbd>SHIFT</kbd><span>Run</span></div>
+        <div><kbd>SPACE</kbd><span>Jump</span></div>
+      </div>
+    </section>
+    <div id="crosshair" aria-hidden="true"></div>
+    <div id="loading">Loading harbor systems<span>...</span></div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
